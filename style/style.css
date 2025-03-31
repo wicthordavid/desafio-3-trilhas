@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-trilhas: #2135A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-trilhas);
+   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#mensagemValidacaoEmail {
+    padding: 0;
+    margin: 0;
+}
+
+.img__cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem__cabecalho {
+    width: 200px;
+}
+
+.pagina {
+    background-color: white;
+    margin: 0 20%;
+    padding-top: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100%;
+    max-width: 858px;
+}
+
+.pagina input{
+    border-radius: 8px;
+    padding: 0 16px;
+    width: 528px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.pagina select{
+    border-radius: 8px;
+    padding: 0 16px;
+    width: 528px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.pagina h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pagina h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 48px;
+}
+
+.pagina p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #8F8881;
+}
+
+.informacoes p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #8F8881;
+    font-weight: 300;
+    padding-top: 24px;
+}
+
+.pagina__navegacao {
+    display: flex;
+}
+
+/* .pagina__formulario {
+
+} */
+
+/*Parte do Upload*//*Parte do Upload*//*Parte do Upload*/
+.file-upload-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 528px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #f9f9f9;
+}
+
+.upload-icon {
+    width: 40px;
+    opacity: 0.5;
+    padding-top: 28px;
+}
+
+.paragrafo__upload {
+    padding-bottom: 28px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none;
+}
+/*Parte do Upload*//*Parte do Upload*//*Parte do Upload*/
+
+/*Seleção de Trilhas*//*Seleção de Trilhas*//*Seleção de Trilhas*/
+.trilhas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.trilha {
+    /* display: flex; */
+    flex-wrap: wrap;
+    border: 2px dashed #ccc;
+    width: 256px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+}
+
+.trilha input {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-top: 8px;
+    accent-color: orange;
+    margin-bottom: 0;
+}
+
+.trilha span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*Seleção de Trilhas*//*Seleção de Trilhas*//*Seleção de Trilhas*/
+
+/*TERMOS*/
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    margin-top: 48px; 
+    align-items: flex-start;
+}
+
+.termos input {
+    width: 19px;
+    height: 19px;
+    border-radius: 1.5px;
+    border: 2px solid rgba(214, 211, 209, 1);
+}
+
+.termos span {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150%;
+}
+
+.termos a {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #F3541C;
+}
+/*TERMOS*/
+
+/*BOTÕES INFERIOES*/
+.botoes__inferiores {
+    display: flex;
+    margin-top: 48px;
+    padding-top: 16px;
+    gap: 16px;
+    padding-bottom: 64px;
+    justify-content: flex-end;
+}
+
+.botao {
+    padding: 12px 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 150%;
+    border-radius: 8px;
+}
+
+#cancel {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(228, 58, 18, 1);
+    color: rgba(228, 58, 18, 1);
+}
+
+#send {
+    background-color: rgba(228, 58, 18, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+/*BOTÕES INFERIOES*/
+
+/*RESPONSIVIDADE MOBILE*/
+
+@media screen and (max-width: 768px) {
+    .pagina {
+        margin: 0 5%;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .pagina input,
+    .pagina select,
+    .custom-file-upload {
+        width: 100%;
+    }
+
+    .trilhas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trilha {
+        width: 100%;
+    }
+
+    .botoes__inferiores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*RESPONSIVIDADE MOBILE*/

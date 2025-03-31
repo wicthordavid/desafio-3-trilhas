@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="pagina">
+            <div class="img__cabecalho">
+            <img  class="imagem__cabecalho" src="assets/ilustration.png" alt="">
+            </div>
+            <div class="pagina__navegacao">
+                <img src="assets/arrow-left-02.png" alt="seta voltar">
+                <p>Voltar</p>
+            </div>
+            <h1>Formulário de Inscrição</h1>
+            <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+            <section class="informacoes">
+
+            <h2>Informações do participante</h2>
+            <section class="pagina__formulario">
+                <p>Nome completo</p>
+                <input type="text" placeholder="Daiane Silva">
+                <p>Data de nascimento</p>
+                <input type="date" placeholder="06/05/2000">
+                <p>CPF</p>
+                <input type="text" placeholder="123.456.789-00">
+                <p>Sexo</p>
+                <select name="sexo">
+                    <option value="M">Masculino</option>
+                    <option value="F" selected>Feminino</option>
+                </select>
+                <p>E-mail</p>
+                <input id='email' type="email" placeholder="trilheiro@gmail.com">
+                <p id="mensagemValidacaoEmail"></p>
+                <p>Telefone</p>
+                <input type="tel" placeholder="(98) 9.8765-4321">
+                <p>Documento de identidade</p>
+
+                <div class="file-upload-container">
+                    <label class="custom-file-upload">
+                        <input type="file">
+                        <img src="assets/cloud-upload.png" alt="Upload" class="upload-icon">
+                        <p class="paragrafo__upload">Clique aqui para <br>selecionar o arquivo</p>
+                    </label>
+                </div>
+
+                <h2>Endereço Residencial</h2>
+                <p>CEP</p>
+                <input type="number">
+                <p>Rua</p>
+                <input type="text">
+                <p>Número</p>
+                <input type="number">
+                <p>Cidade</p>
+                <input type="text">
+                <p>Estado</p>
+                <input type="text" placeholder="MA">
+                <p>Comprovante de residência</p>
+
+                <div class="file-upload-container">
+                    <label class="custom-file-upload">
+                        <input type="file">
+                        <img src="assets/cloud-upload.png" alt="Upload" class="upload-icon">
+                        <p class="paragrafo__upload">Clique aqui para <br>selecionar o arquivo</p>
+                    </label>
+                </div>
+                <h2>Trilhas de aprendizagem</h2>
+                <p>Selecione apenas uma trilha</p>
+                <div class="trilhas">
+
+                        <label class="trilha">
+                            <input type="radio" name="trilha" value="front-end" checked>
+                            <div class="content">
+                                <img src="assets/trilhas/front-end.png" alt="">                                
+                                <span>Programação Front-end</span>
+                            </div>
+                        </label>
+            
+                        <label class="trilha">
+                            <input type="radio" name="trilha" value="back-end">
+                            <div class="content">
+                                <img src="assets/trilhas/icon-back.png" alt="">  
+                                <span>Programação Back-end</span>
+                            </div>
+                        </label>
+            
+                        <label class="trilha">
+                            <input type="radio" name="trilha" value="jogos">
+                            <div class="content">
+                                <img src="assets/trilhas/icon-jogos.png" alt="">  
+                                <span>Programação de Jogos</span>
+                            </div>
+                        </label>
+            
+                        <label class="trilha">
+                            <input type="radio" name="trilha" value="design">
+                            <div class="content">
+                                <img src="assets/trilhas/icon-ux.png" alt="">  
+                                <span>Design e Experiência</span>
+                            </div>
+                        </label>
+            
+                        <label class="trilha">
+                            <input type="radio" name="trilha" value="dados">
+                            <div class="content">
+                                <img src="assets/trilhas/icon-dados.png" alt="">  
+                                <span>Ciência de Dados</span>
+                            </div>
+                        </label>
+                </div>
+
+                <label class="termos">
+                    <input type="checkbox">
+                    <span>Declaro que li e concordo com os <a href="">Termos e Condições</a> e com a <a href="">Política de Privacidade</a>.</span>
+                </label>
+
+                <div class="botoes__inferiores">
+                    <button class="botao" id="cancel">Cancelar</button>
+                    <button class="botao" id="send">Fazer Inscrição</button>
+                </div>
+
+
+            </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>
